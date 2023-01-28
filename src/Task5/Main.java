@@ -31,7 +31,7 @@ public class Main {
             Function<Integer, String> isTrue = o -> "Положительное число " + o; // делаем преобразование для вывода числа с пояснением
             Function<Integer, String> isFalse = o -> "Отрицательное число " + o;
             Function<Integer, String> seeList = ternaryOperator(condition, isTrue, isFalse);
-            System.out.println(seeList.apply(ignored));
+            System.out.println(seeList.apply(ignored));//
         }
     }
 }
