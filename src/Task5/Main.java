@@ -1,8 +1,8 @@
 package Task5;
 
-import java.util.Random;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -32,12 +32,9 @@ public class Main {
             Function<Integer, String> isFalse = o -> "Отрицательное число " + o;
             Function<Integer, String> seeList = ternaryOperator(condition, isTrue, isFalse);
             System.out.println(seeList.apply(ignored));
-                   }
-
+        }
+    }
 }
-
-
- }
 
 
 

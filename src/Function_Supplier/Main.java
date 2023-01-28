@@ -13,13 +13,13 @@ public class Main {
         Double one = 125.969;
         Function<Double, Long> changeDouble = new Function<Double, Long>() {
             @Override
-            public Long apply(Double aDouble) { // one меняется в методе на aDouble
+            public Long apply(Double aDouble) { // one "меняется" в методе на aDouble - внутриметодная переменная
                 return Math.round(aDouble); // округляем и возвр. новое значение
             }
         };
         System.out.println(changeDouble.apply(one)); //выводим результат метода в консоль
 
-        Function<Double, Long> changeDouble1 = number -> Math.round(number); // лямбда, number - внутриметодная переменная
+        Function<Double, Long> changeDouble1 = number -> Math.round(number); // лямбда; number - внутриметодная переменная
         System.out.println(changeDouble1.apply(236.963));
 
         Supplier<Integer> rndInt = new Supplier<Integer>() {
