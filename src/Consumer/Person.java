@@ -10,20 +10,16 @@ public class Person {
         this.fio = fio;
         this.age = age;
     }
-
     public String getFio() {
         return fio;
     }
-
     public int getNumber() {
         return age;
     }
-
     public Person setFio(String fio) {
         this.fio = fio;
         return this;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -31,12 +27,10 @@ public class Person {
         Person person = (Person) o;
         return age == person.age && getFio().equals(person.getFio());
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(getFio(), age);
     }
-
     @Override
     public String toString() {
         return "Объект: " + "название *" + fio + "*, случайный номер: " + age;
